@@ -1,0 +1,152 @@
+{
+  "sheet": "_workspace_2/sheets/sheet_03.png",
+  "grid": "2x3",
+  "files_created": 6,
+  "all_pass": true,
+  "files": [
+    {
+      "file": "_workspace_2/emoticons/19.png",
+      "index": 19,
+      "label": "emoticon 1",
+      "cell": {
+        "row": 0,
+        "col": 0
+      },
+      "content_box": {
+        "x": "17",
+        "y": "19",
+        "w": "789",
+        "h": "802"
+      },
+      "validation": {
+        "file": "_workspace_2/emoticons/19.png",
+        "size_ok": true,
+        "transparent_ratio": 0.621,
+        "clipping_risk": "False",
+        "edge_opaque_ratio": 0.0,
+        "content_ratio": 0.807,
+        "pass": "True"
+      }
+    },
+    {
+      "file": "_workspace_2/emoticons/20.png",
+      "index": 20,
+      "label": "emoticon 2",
+      "cell": {
+        "row": 0,
+        "col": 1
+      },
+      "content_box": {
+        "x": "124",
+        "y": "74",
+        "w": "626",
+        "h": "768"
+      },
+      "validation": {
+        "file": "_workspace_2/emoticons/20.png",
+        "size_ok": true,
+        "transparent_ratio": 0.613,
+        "clipping_risk": "False",
+        "edge_opaque_ratio": 0.0,
+        "content_ratio": 0.676,
+        "pass": "True"
+      }
+    },
+    {
+      "file": "_workspace_2/emoticons/21.png",
+      "index": 21,
+      "label": "emoticon 3",
+      "cell": {
+        "row": 0,
+        "col": 2
+      },
+      "content_box": {
+        "x": "17",
+        "y": "122",
+        "w": "811",
+        "h": "720"
+      },
+      "validation": {
+        "file": "_workspace_2/emoticons/21.png",
+        "size_ok": true,
+        "transparent_ratio": 0.609,
+        "clipping_risk": "False",
+        "edge_opaque_ratio": 0.0,
+        "content_ratio": 0.723,
+        "pass": "True"
+      }
+    },
+    {
+      "file": "_workspace_2/emoticons/22.png",
+      "index": 22,
+      "label": "emoticon 4",
+      "cell": {
+        "row": 1,
+        "col": 0
+      },
+      "content_box": {
+        "x": "26",
+        "y": "33",
+        "w": "766",
+        "h": "781"
+      },
+      "validation": {
+        "file": "_workspace_2/emoticons/22.png",
+        "size_ok": true,
+        "transparent_ratio": 0.591,
+        "clipping_risk": "False",
+        "edge_opaque_ratio": 0.0,
+        "content_ratio": 0.81,
+        "pass": "True"
+      }
+    },
+    {
+      "file": "_workspace_2/emoticons/23.png",
+      "index": 23,
+      "label": "emoticon 5",
+      "cell": {
+        "row": 1,
+        "col": 1
+      },
+      "content_box": {
+        "x": "13",
+        "y": "41",
+        "w": "817",
+        "h": "755"
+      },
+      "validation": {
+        "file": "_workspace_2/emoticons/23.png",
+        "size_ok": true,
+        "transparent_ratio": 0.635,
+        "clipping_risk": "False",
+        "edge_opaque_ratio": 0.0,
+        "content_ratio": 0.767,
+        "pass": "True"
+      }
+    },
+    {
+      "file": "_workspace_2/emoticons/24.png",
+      "index": 24,
+      "label": "emoticon 6",
+      "cell": {
+        "row": 1,
+        "col": 2
+      },
+      "content_box": {
+        "x": "36",
+        "y": "74",
+        "w": "783",
+        "h": "733"
+      },
+      "validation": {
+        "file": "_workspace_2/emoticons/24.png",
+        "size_ok": true,
+        "transparent_ratio": 0.572,
+        "clipping_risk": "False",
+        "edge_opaque_ratio": 0.0,
+        "content_ratio": 0.77,
+        "pass": "True"
+      }
+    }
+  ]
+}
