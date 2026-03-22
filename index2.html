@@ -257,6 +257,31 @@
     margin-top: 4px;
   }
 
+  .modal-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    gap: 12px;
+  }
+  .modal-nav button {
+    background: #ffe812;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3c1e1e;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .modal-nav button:hover { background: #ffd700; }
+  .modal-nav button:active { transform: scale(0.95); }
+  .modal-nav .nav-counter {
+    font-size: 13px;
+    color: #aaa;
+  }
+
   @keyframes pop {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
@@ -319,6 +344,11 @@
     <img id="modal-img" src="" alt="">
     <div class="modal-label" id="modal-label"></div>
     <div class="modal-num" id="modal-num"></div>
+    <div class="modal-nav">
+      <button onclick="navigateModal(-1)">← 이전</button>
+      <span class="nav-counter" id="nav-counter"></span>
+      <button onclick="navigateModal(1)">다음 →</button>
+    </div>
   </div>
 </div>
 
@@ -347,13 +377,32 @@ labels.forEach((label, i) => {
     <img src="_workspace_2/output/${num}.png" alt="${label}" loading="lazy">
     <div class="label">${label}</div>
   `;
-  card.onclick = () => {
-    modalImg.src = `_workspace_2/output/${num}.png`;
-    modalLabel.textContent = label;
-    modalNum.textContent = `#${num} · 360x360px`;
-    modal.classList.add('active');
-  };
+  card.onclick = () => openModal(i);
   grid.appendChild(card);
+});
+
+let currentIndex = 0;
+function openModal(i) {
+  currentIndex = i;
+  updateModal();
+  modal.classList.add('active');
+}
+function updateModal() {
+  const num = String(currentIndex + 1).padStart(2, '0');
+  modalImg.src = `_workspace_2/output/${num}.png`;
+  modalLabel.textContent = labels[currentIndex];
+  modalNum.textContent = `#${num} · 360x360px`;
+  document.getElementById('nav-counter').textContent = `${currentIndex + 1} / ${labels.length}`;
+}
+function navigateModal(dir) {
+  currentIndex = (currentIndex + dir + labels.length) % labels.length;
+  updateModal();
+}
+document.addEventListener('keydown', (e) => {
+  if (!modal.classList.contains('active')) return;
+  if (e.key === 'ArrowLeft') navigateModal(-1);
+  if (e.key === 'ArrowRight') navigateModal(1);
+  if (e.key === 'Escape') modal.classList.remove('active');
 });
 </script>
 </body>
