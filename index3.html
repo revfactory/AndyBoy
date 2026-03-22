@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>카카오 이모티콘 미리보기</title>
+<title>Nina 이모티콘 24종 세트</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -271,18 +271,18 @@
 <body>
 
 <div class="nav-tabs">
-  <a href="index.html" class="active">Andy Boy</a>
+  <a href="index.html">Andy Boy</a>
   <a href="index2.html">국부론/이승현</a>
-  <a href="index3.html">Nina</a>
+  <a href="index3.html" class="active">Nina</a>
 </div>
 
 <div class="header">
-  <h1>Andy Boy</h1>
-  <p>병맛 이모티콘 24종 세트</p>
+  <h1>Nina</h1>
+  <p>이모티콘 24종 세트</p>
 </div>
 
 <div class="character-hero">
-  <img src="_workspace/output/character_base.png" alt="캐릭터">
+  <img src="_workspace_3/output/character_base.png" alt="캐릭터">
 </div>
 
 <div class="meta-bar">
@@ -295,12 +295,12 @@
 
 <div class="special-section">
   <div class="special-card">
-    <img src="_workspace/output/main.png" width="120" height="120" alt="메인">
+    <img src="_workspace_3/output/main.png" width="120" height="120" alt="메인">
     <div class="spec-label">메인 이미지</div>
     <div class="spec">240 x 240px</div>
   </div>
   <div class="special-card">
-    <img src="_workspace/output/tab.png" width="96" height="74" alt="탭" style="image-rendering: pixelated;">
+    <img src="_workspace_3/output/tab.png" width="96" height="74" alt="탭" style="image-rendering: pixelated;">
     <div class="spec-label">탭 이미지</div>
     <div class="spec">96 x 74px</div>
   </div>
@@ -324,11 +324,11 @@
 
 <script>
 const labels = [
-  '인사/안녕', '감사/고마워', '사랑/좋아해', '울음/슬픔',
-  '분노/화남', '놀람/충격', '웃음/ㅋㅋ', '좋아요/엄지척',
-  '미안/죄송', '축하/파티', '피곤/지침', '거부/싫어',
-  '출근/좀비', '퇴근/해방', '밥먹자', '커피/카페인',
-  '잠/졸림', '운동/헬스', '공부/시험', '비밀/쉿',
+  '인사/안녕', '감사/고마워', '사랑/하트', '울음/슬픔',
+  '화남/짜증', '놀람/충격', '빵터짐/ㅋㅋ', '좋아요/엄지척',
+  '미안/죄송', '축하/파티', '피곤/영혼이탈', '거부/NO',
+  '출근/월요병', '퇴근/해방', '라면/밥먹자', '커피/사랑',
+  '잠/숙면', '운동/헬스', '공부/뇌폭발', '비밀/쉿',
   '쇼핑/돈', '잠깐/스톱', '응원/파이팅', '바이바이'
 ];
 
@@ -344,11 +344,11 @@ labels.forEach((label, i) => {
   card.className = 'emoticon-card';
   card.innerHTML = `
     <span class="num">${num}</span>
-    <img src="_workspace/output/${num}.png" alt="${label}" loading="lazy">
+    <img src="_workspace_3/output/${num}.png" alt="${label}" loading="lazy">
     <div class="label">${label}</div>
   `;
   card.onclick = () => {
-    modalImg.src = `_workspace/output/${num}.png`;
+    modalImg.src = `_workspace_3/output/${num}.png`;
     modalLabel.textContent = label;
     modalNum.textContent = `#${num} · 360x360px`;
     modal.classList.add('active');
